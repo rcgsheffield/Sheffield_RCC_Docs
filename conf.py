@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# sheffield_hpc documentation build configuration file, created by
+# Sheffield_RCC_Docs documentation build configuration file, created by
 # sphinx-quickstart on Tue Mar 31 11:40:21 2015.
 #
 
@@ -37,7 +37,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Sheffield HPC Documentation'
+project = 'Sheffield Research Cloud Computing Documentation'
 copyright = '2022, The University of Sheffield'
 author = 'The University of Sheffield'
 
@@ -83,7 +83,7 @@ html_theme = 'sheffieldhpc'
 html_theme_path = ['themes'] + [sphinx_rtd_theme.get_html_theme_path()]
 html_theme_options = {
     'style_external_links': True,
-    'canonical_url': 'https://docs.hpc.sheffield.ac.uk',
+    'canonical_url': 'https://rcgsheffield.github.io/Sheffield_RCC_Docs',
     'navigation_depth': 6,
 }
 
@@ -91,7 +91,7 @@ html_theme_options = {
 #                       'navbar_pagenav': False,
 #                       'source_link_position': False,
 #                       'bootswatch_theme': 'flatly',
-#                       'navbar_site_name': "Sheffield HPC Documentation",
+#                       'navbar_site_name': "Sheffield Research Cloud Computing Documentation",
 #                       'navbar_title': ' ',
 #                       'navbar_links': [
 #                           ("Home", "index"),
@@ -109,7 +109,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Sheffield HPC Documentation'
+html_title = 'Sheffield Research Cloud Computing Documentation'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -124,7 +124,7 @@ html_css_files = [
 ]
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'hpcdoc'
+htmlhelp_basename = 'rccdoc'
 
 # Hide 'view page source' link
 html_show_sourcelink = False
@@ -134,7 +134,7 @@ html_show_sourcelink = False
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'iceberg', u'Sheffield HPC Documentation',
+    (master_doc, 'default', u'Sheffield Research Cloud Computing Documentation',
      [author], 1)
 ]
 
