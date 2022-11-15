@@ -3,7 +3,7 @@ on:
   # Trigger on pull requests against the master branch
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   test_docs_build:
     runs-on: ubuntu-latest
