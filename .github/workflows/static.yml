@@ -3,7 +3,7 @@ name: Deploy site static content to Github Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches: ["main"]
 
   # Or manually from the Actions tab
   workflow_dispatch:
