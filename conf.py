@@ -83,7 +83,7 @@ html_theme = 'sheffieldhpc'
 html_theme_path = ['themes'] + [sphinx_rtd_theme.get_html_theme_path()]
 html_theme_options = {
     'style_external_links': True,
-    'canonical_url': 'https://rcgsheffield.github.io/Sheffield_RCC_Docs',
+    'canonical_url': 'https://docs.rcc.shef.ac.uk',
     'navigation_depth': 6,
 }
 
