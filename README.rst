@@ -1,4 +1,5 @@
-[![Deploy site static content to Github Pages](https://github.com/rcgsheffield/Sheffield_RCC_Docs/actions/workflows/static.yml/badge.svg)](https://github.com/rcgsheffield/Sheffield_RCC_Docs/actions/workflows/static.yml)
+.. image:: https://github.com/rcgsheffield/sheffield_rcc_docs/actions/workflows/static.yml/badge.svg
+    :target: https://github.com/rcgsheffield/Sheffield_RCC_Docs/actions/workflows/static.yml
 
 Sheffield Research Cloud Computing documentation
 ==================================================
@@ -11,7 +12,7 @@ For a guide on the rst file format see `this <http://thomas-cokelaer.info/tutori
 
 Rendered Documentation
 ----------------------
-`This website <https://rcgsheffield.github.io/Sheffield_RCC_Docs/>`_  is currently automatically built from this repository:
+`This website <https://docs.shef.ac.uk/>`_  is currently automatically built from this repository:
 each push to the ``main`` branch causes the Github Action to build and serve the documentation.
 
 The ReadTheDocs build configuration is stored in the ``.readthedocs.yaml`` file with the Python version pinned to 3.7 and the Pip 
