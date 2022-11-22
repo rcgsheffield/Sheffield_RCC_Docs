@@ -10,3 +10,8 @@
 
 .. role:: underline-bold
     :class: underline-bold
+
+.. warning:: 
+
+    This documentation is for a pilot service. 
+    It is likely incomplete or may be inaccurate as the service is developed.
