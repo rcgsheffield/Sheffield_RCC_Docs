@@ -22,5 +22,6 @@ Take a look at the `Research and Innovation <https://students.sheffield.ac.uk/it
   :maxdepth: 1
   :glob:
 
-  ronin-docs
+  ronin/index
   pilot/index
+  glossary
