@@ -16,7 +16,7 @@ This has led to confusion in some cases.
 
 Unable to connect to new mahine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Problem:** Upon creation of a machine, Ronin shows the instance as “Available” however the system may be inaccessible via Ronin Link or SSH.
+**Problem:** Upon creation of a machine, Ronin shows the :term:`instance` as “Available” however the system may be inaccessible via Ronin Link or SSH.
 
 .. image:: images/demo_running.jpg
     :align: center

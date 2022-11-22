@@ -10,7 +10,7 @@ Through the pilot phase there will be aspects of the system that may be partiall
 Red Hat Machines
 ---------------------------------------
 
-**Problem:** You receive the message “This system is not registered with an entitlement server. You can use subscription-manager to register.” when attempting to install or update packages on the system.
+**Problem:** You receive the message “This system is not registered with an entitlement server. You can use subscription-manager to register.” when attempting to install or update :term:`packages<package>` on the system.
 
 .. image:: images/rhel_subscription.jpg
     :class: with-shadow float-right
@@ -26,7 +26,7 @@ Red Hat Machines
 GPU Backed Machines
 ---------------------------------------
 
-Ronin provides access to a handful of GPU backed AWS instances,given there are so many options we've decided to keep to providing one pre-configured package.
+Ronin provides access to a handful of GPU backed :term:`AWS instances<instance>`,given there are so many options we've decided to keep to providing one pre-configured package.
 
 The **"Ubuntu 20.04 LTS - NVIDIA Drivers"** package comes with drivers and software pre-configured to work with Ronin's remote desktop solution Nice DCV, allowing you to skip the somewhat teadious configuration steps.
 
