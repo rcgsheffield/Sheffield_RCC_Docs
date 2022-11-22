@@ -14,4 +14,4 @@
 .. warning:: 
 
     This documentation is for a pilot service. 
-    It is likely incomplete or may be inaccurate as the service environment is developed.
+    It is likely incomplete or may be inaccurate as the service is developed.
