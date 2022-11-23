@@ -3,7 +3,7 @@
 Known Issues
 =======================================
 
-Here you will find a list of known issues, causes and potential workarounds/fixes. If you're facing an issue not mentioned here or in the `<limitations>`_ page, please get in touch via the IT Services Helpdesk.
+Here you will find a list of known issues, causes and potential workarounds/fixes. If you're facing an issue not mentioned here or in the :ref:`limitations-considerations` page, please get in touch via the IT Services Helpdesk.
 
 
 .. _windows-machines:
