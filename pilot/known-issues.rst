@@ -54,7 +54,7 @@ Unlike the available Linux distros, Windows usually likes to have more power.
 Try selecting a bigger instance type when creating the machine. This usually links back to the first problem as it is exacerbated by the lower performance.
 
 .. note:: 
-    This is the RCC platform after all, we encourage you to use the big computers!
+    This is the :term:`RCC` platform after all, we encourage you to use the big computers!
 
 .. _ubuntu-machines:
 

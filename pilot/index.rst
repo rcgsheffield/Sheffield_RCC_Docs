@@ -3,7 +3,7 @@
 Pilot Documentation
 =======================================
 
-This section of the documentation details the known isues, limitations and considerations around the RCC platform while in the pilot phase.
+This section of the documentation details the known isues, limitations and considerations around the :term:`RCC` platform while in the pilot phase.
 
 
 .. toctree::
