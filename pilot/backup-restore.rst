@@ -43,5 +43,49 @@ After all is said and done you should now have a freshly restored machine.
     
     You may find that the machine reboots itself one or more times without warning shortly after creation.
 
-.. note:: 
+.. admonition:: Windows Renaming
+
     If your restored machine is running the Windows family of OSes you'll find that the computer name gets '-restored' suffixed to avoid naming conflcts.
+
+.. _restoring_s3_objects:
+
+Restoring S3 Objects
+---------------------------------------
+
+Data in your S3 buckets is backed up using object versioning. This is a feature automatically enabled for you at creation of a new bucket, and picked up apon by our backup schedule.
+
+Any changes to a file after its inital creation will form a new version, allowing you to browse through the old ones should you need to revert to an earlier point in time.
+
+.. hint:: 
+    The best place to learn about versioning is via the AWS documentation on `versioning <https://docs.aws.amazon.com/AmazonS3/latest/userguide/versioning-workflows.html>`__ itself.
+    
+    Or should you be using Cyberduck, their documentation on `versioning <https://docs.cyberduck.io/protocols/s3/#versions>`__ will help too.
+
+The features available to you for self service restore is something of a quasi backup and not what we'd consider fool proof.
+
+This is why we also keep backups of your data in a vault not accesable to end users. In the event you are not able to restore your files to an earlier point in time using versioning, please get in touch via the IT Services Helpdesk.
+
+.. _backup-retention:
+
+Backup Retention
+---------------------------------------
+
+You may have heard mention to retention in differing parts of this documentation.
+This is the amount of time we keep backups for and their granularity.
+
+In a perfect world this would be indefinite, however the more backups we keep the more data is kept and therefore cost.
+
+We currently keep backups with the following retention:
+    - 14 Daily backps
+    - 8 Weekly backups
+
+This means you can go 2 months back in time with weekly increments, or 2 weeks with daily.
+
+.. _backup-schedule:
+
+Backup Schedule
+---------------------------------------
+
+Backup jobs are scheduled to start at 00:00 GMT, however they have an 8 hour starting window. Meaning that the time of the backup could be anywhere between 00:00 GMT and 08:00 GMT.
+
+When restoring a machine you will always know the time of the backup as it is labled on the package down to the minute.
