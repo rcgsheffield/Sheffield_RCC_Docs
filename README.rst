@@ -106,8 +106,8 @@ Testing the building of the documentation
 The validity of the reStructuredText in this repo and the ability to convert that to HTML with Sphinx can be tested in three ways:
 
 * Locally by contributors when they run e.g. ``tox -e py37-livehtml``
-* By a [GitHub Actions](https://github.com/rcgsheffield/Sheffield_RCC_Docs/actions/) Workflow each time a contributor creates or updates a Pull Request.
-* By the build and deploy [GitHub Action](https://github.com/rcgsheffield/Sheffield_RCC_Docs/actions/) Workflow on each push to the ``main`` branch.
+* By a `GitHub Actions <https://github.com/rcgsheffield/Sheffield_RCC_Docs/actions/>`_ Workflow each time a contributor creates or updates a Pull Request.
+* By the build and deploy `GitHub Action <https://github.com/rcgsheffield/Sheffield_RCC_Docs/actions/>`_ Workflow on each push to the ``main`` branch.
 
 Important files / folders
 ^^^^^^^^^^^^^^^^^^^^^^^^^
