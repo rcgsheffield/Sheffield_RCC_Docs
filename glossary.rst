@@ -13,6 +13,3 @@ You should find information on most of them here.
     
     Package
         A Ronin term relating to an Amazon Machine Image or AMI, these are instances that have been packaged up for re-use elsewhare. The term package and AMI may be used interchangeably in this documentation.
-
-    RCC
-        An abbreviation for Research Cloud Computing

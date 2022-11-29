@@ -6,7 +6,7 @@ Research Cloud Computing @ Sheffield
 This is the documentation for The University of Sheffield's Research Cloud Computing infrastructure.
 
 .. note::
-    The :term:`RCC` project is currently in its pilot phase, please note that sections of this documentation may be subject to change and/or under active construction as the project develops.
+    The RCC project is currently in its pilot phase, please note that sections of this documentation may be subject to change and/or under active construction as the project develops.
 
 If you are currently attending TUOS and would like to know more about cloud computing for research please check out our `Cloud Computing <https://students.sheffield.ac.uk/it-services/research/cloud-computing>`_ page on the website.
 
