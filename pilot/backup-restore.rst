@@ -52,7 +52,8 @@ After all is said and done you should now have a freshly restored machine.
 Restoring S3 Objects
 ---------------------------------------
 
-Data in your S3 buckets is backed up using object versioning. This is a feature automatically enabled for you at creation of a new bucket, and picked up apon by our backup schedule.
+.. warning:: 
+    Data in your S3 buckets is backed up using object versioning. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage.
 
 Any changes to a file after its inital creation will form a new version, allowing you to browse through the old ones should you need to revert to an earlier point in time.
 
@@ -61,25 +62,37 @@ Any changes to a file after its inital creation will form a new version, allowin
     
     Or should you be using Cyberduck, their documentation on `versioning <https://docs.cyberduck.io/protocols/s3/#versions>`__ will help too.
 
-The features available to you for self service restore is something of a quasi backup and not what we'd consider fool proof.
+Versioning enables something of a self service restore, more of a quasi backup and not what we'd consider fool proof.
+For that reason we also keep backups of your data in a vault not accesable to end users.
 
-This is why we also keep backups of your data in a vault not accesable to end users. In the event you are not able to restore your files to an earlier point in time using versioning, please get in touch via the IT Services Helpdesk.
+In the event you are not able to restore your files to an earlier point in time using versioning, please get in touch via the IT Services Helpdesk.
 
 .. _backup-retention:
 
 Backup Retention
 ---------------------------------------
 
-You may have heard mention to retention in differing parts of this documentation.
-This is the amount of time we keep backups for and their granularity.
+You may have seen reference to retention in differing parts of this documentation.
+Retention in a backup context is the amount of time we keep backups for and their granularity.
 
-In a perfect world this would be indefinite, however the more backups we keep the more data is kept and therefore cost.
+In a perfect world this would be indefinite, however the more backups we keep the more data is kept and therefore cost increases.
+
+Machine backups
+^^^^^^^^^^^^^^^
 
 We currently keep backups with the following retention:
     - 14 Daily backps
     - 8 Weekly backups
 
 This means you can go 2 months back in time with weekly increments, or 2 weeks with daily.
+
+Bucket backups
+^^^^^^^^^^^^^^
+
+Full bucket backups follow the same retention policies as machine backups, however versioing only presents you with the last 14 days of changes.
+
+If you have a file you'd wish to restore that's not showing up in versioning please get in touch via the IT Services Helpdesk.
+
 
 .. _backup-schedule:
 
