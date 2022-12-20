@@ -66,10 +66,11 @@ Ubuntu Machines
 .. image:: images/dcv_install.jpg
     :class: float-right
 
-**Casue:** Ronin Link creates a desktop environment by SSHing into the target machine and running the installation step by step, these commands all originate from the machine running Ronin Link.
+**Casue:** Ronin Link creates a desktop environment by SSHing into the target machine and running the installation step by step, these commands all originate from the machine running Ronin Link. 
+
 If at any point in the install the connection is broken (i.e. Network connectivity is lost) then there is potential for the installer to break and soft lock future attemps.    
 
-.. rst-class:: float-right
+.. rst-class:: clear-both
 
 **Solution:** If the machine is brand new it might be easier to terminate the instance and try again with a new machine.
 If you need to access the machine it should still be available over SSH, although if access over the desktop environment is a must please get in touch via the IT Services Helpdesk.
@@ -77,9 +78,10 @@ If you need to access the machine it should still be available over SSH, althoug
 **Problem:** Connecting to a remote desktop session opens a new screen but doesn't show anything.
 
 .. image:: images/joining_session.png
-    :class: float-right
+    :width: 20%
+    :align: right
+
+**Solution:** Close the session window and try to connect again. Most of the time this is enough to get the session to connect and most commonly happens with brand new instances.
 
 .. note::
     An easy way to know if the session is working is that there will be a spinning circle to indicate the session is connecting.
-
-**Solution:** Close the session window and try to connect again. Most of the time this is enough to get the session to connect and most commonly happens with brand new instances.
