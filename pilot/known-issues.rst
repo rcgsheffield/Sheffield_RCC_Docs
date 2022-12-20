@@ -73,3 +73,13 @@ If at any point in the install the connection is broken (i.e. Network connectivi
 
 **Solution:** If the machine is brand new it might be easier to terminate the instance and try again with a new machine.
 If you need to access the machine it should still be available over SSH, although if access over the desktop environment is a must please get in touch via the IT Services Helpdesk.
+
+**Problem:** Connecting to a remote desktop session opens a new screen but doesn't show anything.
+
+.. image:: images/joining_session.png
+    :class: float-right
+
+.. note::
+    An easy way to know if the session is working is that there will be a spinning circle to indicate the session is connecting.
+
+**Solution:** Close the session window and try to connect again. Most of the time this is enough to get the session to connect and most commonly happens with brand new instances.
