@@ -16,6 +16,6 @@ sphinx:
 # Theme requirement of 2to3 support see: https://github.com/ryan-roemer/sphinx-bootstrap-theme/issues/216
 # requires initial setuptools downgrade.
 python:
-   version: "3.7"
+   version: "3.10"
    install:
    - requirements: ./requirements.txt
