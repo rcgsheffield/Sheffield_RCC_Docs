@@ -27,25 +27,25 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     strategy:
-      # Spawn and run a job for Python 3.7 version.
+      # Spawn and run a job for Python 3.10 version
       matrix:
-        python: [3.7]
+        python: ["3.10"]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # Install some Pythons.
+      # Install python
       - name: Set up a version of Python
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python }}
-      # Install Tox for build stage.
+      # Install Tox for build stage
       - name: Upgrade pip and install Tox
         run: |
           python -m pip install --upgrade pip
           python -m pip install tox
-      # Run build stage - py37 should suffice.
+      # Run build stage
       - name: Generate pages
-        run: tox -e py37
+        run: tox -e py310
       # Now upload to Github Pages
       - name: Setup Pages
         uses: actions/configure-pages@v2
