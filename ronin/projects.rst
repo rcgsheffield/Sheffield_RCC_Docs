@@ -3,7 +3,7 @@
 Ronin Projects
 =======================================
 
-When you are given access to RCC it will come in the form of one or more Projects presented inside of Ronin.
+When you are given access to :term:`RCC` it will come in the form of one or more Projects presented inside of Ronin.
 Resources you create inside of these projects have differing levels of network access and accessability.
 
 Networking
