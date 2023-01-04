@@ -38,7 +38,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Sheffield Research Cloud Computing Documentation'
-copyright = '2022, The University of Sheffield'
+copyright = '2023, The University of Sheffield'
 author = 'The University of Sheffield'
 
 # The version info for the project you're documenting, acts as replacement for
