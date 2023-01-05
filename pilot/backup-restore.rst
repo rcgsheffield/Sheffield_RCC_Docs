@@ -84,7 +84,7 @@ We currently keep backups with the following retention:
     - 14 Daily backps
     - 8 Weekly backups
 
-This means you can go 2 months back in time with weekly increments, or 2 weeks with daily.
+This means you can go 2 months back in time with weekly increments, or 2 weeks with daily increments.
 
 Bucket backups
 ^^^^^^^^^^^^^^
