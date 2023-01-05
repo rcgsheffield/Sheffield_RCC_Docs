@@ -63,7 +63,7 @@ Any changes to a file after its inital creation will form a new version, allowin
     Or should you be using Cyberduck, their documentation on `versioning <https://docs.cyberduck.io/protocols/s3/#versions>`__ will help too.
 
 Versioning enables something of a self service restore, more of a quasi backup and not what we'd consider fool proof.
-For that reason we also keep backups of your data in a vault not accesable to end users.
+For that reason we also keep backups of your data in a vault not accessible to end-users.
 
 In the event you are not able to restore your files to an earlier point in time using versioning, please get in touch via the IT Services Helpdesk.
 
