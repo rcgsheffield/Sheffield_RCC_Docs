@@ -73,7 +73,7 @@ Backup Retention
 ---------------------------------------
 
 You may have seen reference to retention in differing parts of this documentation.
-Retention in a backup context is the amount of time we keep backups for and their granularity.
+Retention in a backup context is the amount of time we keep backups for and how frequently we create backups (their granularity).
 
 In a perfect world this would be indefinite, however the more backups we keep the more data is kept and therefore cost increases.
 
