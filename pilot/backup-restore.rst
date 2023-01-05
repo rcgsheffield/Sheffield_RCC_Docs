@@ -89,7 +89,7 @@ This means you can go 2 months back in time with weekly increments, or 2 weeks w
 Bucket backups
 ^^^^^^^^^^^^^^
 
-Full bucket backups follow the same retention policies as machine backups, however versioing only presents you with the last 14 days of changes.
+Full bucket backups follow the same retention policies as machine backups, however versioning only presents you with the last 14 days of changes.
 
 If you have a file you'd wish to restore that's not showing up in versioning please get in touch via the IT Services Helpdesk.
 
