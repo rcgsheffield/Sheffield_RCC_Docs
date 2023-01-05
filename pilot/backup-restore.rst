@@ -99,6 +99,6 @@ If you have a file you'd wish to restore that's not showing up in versioning ple
 Backup Schedule
 ---------------------------------------
 
-Backup jobs are scheduled to start at 00:00 GMT, however they have an 8 hour starting window. Meaning that the time of the backup could be anywhere between 00:00 GMT and 08:00 GMT.
+Backup jobs are scheduled to start at 00:00 GMT, however they have an 8 hour starting window, meaning that the time of the backup could be anywhere between 00:00 GMT and 08:00 GMT.
 
 When restoring a machine you will always know the time of the backup as it is labelled on the package down to the minute.
