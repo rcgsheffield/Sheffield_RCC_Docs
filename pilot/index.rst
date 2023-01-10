@@ -13,6 +13,7 @@ This section of the documentation details the known isues, limitations and consi
 
   known-issues
   limitations-considerations
+  backup-restore
 
 * :ref:`known-isues`
 * :ref:`limitations-considerations`
