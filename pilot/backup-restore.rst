@@ -11,7 +11,7 @@ As such you are able to make use of these features in the event of data loss/cor
 Restoring Machines
 ---------------------------------------
 
-Due to the technical implementation automated backups show up under the packages section in Ronin, but it is not where they are restored from.
+Due to their technical implementation automated backups show up under 'Packages' in Ronin, but it is not where they are restored from.
 
 
 .. image:: images/project_packages.png
@@ -32,7 +32,7 @@ It's usually best to use the search function at the top right to find the name o
 
 Once you have found your target machine in the list, select one that has a date of creation you're happy with (you may wish to go further back in time), close the packages window and continue as if you were going to create a new machine.
 
-What you have essentially done here is clone a macihne from a set point in time. You may even still have the source machine running while this is happening.
+What you have essentially done here is clone a machine from a set point in time. You may even still have the source machine running while this is happening.
 
 After all is said and done you should now have a freshly restored machine.
 
@@ -54,14 +54,14 @@ Restoring S3 Objects
 ---------------------------------------
 
 .. warning:: 
-    Data in your S3 buckets is backed up using object versioning. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage.
+    Data in your S3 buckets is backed up using 'object versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage.
 
-Any changes to a file after its inital creation will form a new version, allowing you to browse through the old ones should you need to revert to an earlier point in time.
+Any changes to a file after its initial creation will form a new version, allowing you to browse through the old ones should you need to revert to an earlier point in time.
 
 .. hint:: 
     The best place to learn about versioning is via the AWS documentation on `versioning <https://docs.aws.amazon.com/AmazonS3/latest/userguide/versioning-workflows.html>`__ itself.
     
-    Or should you be using Cyberduck, their documentation on `versioning <https://docs.cyberduck.io/protocols/s3/#versions>`__ will help too.
+    Should you be using Cyberduck, their documentation on `versioning <https://docs.cyberduck.io/protocols/s3/#versions>`__ will help too.
 
 Versioning enables something of a self-service restore, more of a quasi-backup and not what we'd consider fool-proof.
 For that reason we also keep backups of your data in a vault not accessible to end-users.
@@ -82,7 +82,7 @@ Machine backups
 ^^^^^^^^^^^^^^^
 
 We currently keep backups with the following retention:
-    - 14 Daily backps
+    - 14 daily backups
     - 8 Weekly backups
 
 This means you can go 2 months back in time with weekly increments, or 2 weeks with daily increments.
