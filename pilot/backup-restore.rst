@@ -18,7 +18,7 @@ Due to the technical implementation automated backups show up under the packages
     :class: float-right
     :scale: 50%
 
-As our backups are essentially packages, a restore is performed by `creating a new machine <https://blog.ronin.cloud/create-a-machine/>`_ and searching the "Project Packages" section under Step 1 of the machine creation screen.
+As automated backups show up as Ronin Packages a restore can be performed by `creating a new machine <https://blog.ronin.cloud/create-a-machine/>`_ and searching the "Project Packages" section under Step 1 of the machine creation screen.
 
 Here you may find that there is a mix of your own self created :term:`project packages<Package>` and the scheduled backups. If you have a lot of machines it can become a little difficult to see the wood for the trees.
 
