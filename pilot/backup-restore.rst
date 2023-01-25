@@ -52,7 +52,7 @@ Restoring S3 Objects
 ---------------------------------------
 
 .. warning:: 
-    Data in your S3 buckets is backed up using 'object versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage.
+    Data in your S3 buckets is backed up using 'object versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage, we reccomend following this guide from Ronin on how to manage your buckets: `Working with Object Storage <https://blog.ronin.cloud/object-storage/>`__
 
 Any changes to a file after its initial creation will form a new version, allowing you to browse through the old ones should you need to revert to an earlier point in time.
 
