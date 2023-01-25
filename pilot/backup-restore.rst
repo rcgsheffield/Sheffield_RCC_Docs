@@ -6,6 +6,8 @@ Backup and Restore
 As :term:`RCC` is built upon AWS we're making use of the automated backup systems they provide.
 As such you are able to make use of these features in the event of data loss/corruption to restore from an alternate point in time.
 
+Backup and restoration is split out into 'Machine' and 'S3 Object Storage' as the data stored is handled differently for each. Machines are backed up and restored in full at a single point in time whereas object storage is much more granular, allowing you to restore to specific versions and at an individual object level.
+
 .. _restoring_machines:
 
 Restoring Machines
