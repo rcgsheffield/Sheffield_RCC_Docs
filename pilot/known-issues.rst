@@ -15,7 +15,7 @@ Unlike the available Linux distributions, Windows Sever is more resource intensi
 This has led to confusion in some cases.
 
 Unable to connect to new machine
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Problem:** Upon creation of a machine, Ronin shows the :term:`instance` as “Available” however the system may be inaccessible via Ronin Link or SSH.
 
@@ -25,7 +25,7 @@ Unable to connect to new machine
 **Solution:** Windows images are not handled properly in the current Ronin build. They typically take 15 minutes to start-up at initial creation, simply wait a little longer before trying to connect. Avoid restarting the machine during this time.
 
 Unable to connect to machine - Reoccurring
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Problem:** I'm having issues connecting to my instance, even though I might have been able to connect earlier.
 
