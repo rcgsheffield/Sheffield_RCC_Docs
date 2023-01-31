@@ -1,4 +1,4 @@
-.. _known-isues:
+.. _known-issues:
 
 Known Issues
 =======================================
@@ -11,10 +11,10 @@ Here you will find a list of known issues, causes and potential workarounds/fixe
 Windows Machines
 ---------------------------------------
 
-Unlike the available Linux distributions, Windows Sever is more resouce intensive and usually takes longer to become available.
+Unlike the available Linux distributions, Windows Sever is more resource intensive and usually takes longer to become available.
 This has led to confusion in some cases.
 
-Unable to connect to new mahine
+Unable to connect to new machine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Problem:** Upon creation of a machine, Ronin shows the :term:`instance` as “Available” however the system may be inaccessible via Ronin Link or SSH.
 
@@ -23,7 +23,7 @@ Unable to connect to new mahine
 
 **Solution:** Windows images are not handled properly in the current Ronin build. They typically take 15 minutes to start-up at initial creation, simply wait a little longer before trying to connect. Avoid restarting the machine during this time.
 
-Unable to connect to mahine - Reoccuring
+Unable to connect to machine - Reoccurring
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Problem:** I'm having issues connecting to my instance, even though I might have been able to connect earlier.
@@ -66,9 +66,9 @@ Ubuntu Machines
 .. image:: images/dcv_install.jpg
     :class: float-right
 
-**Casue:** Ronin Link creates a desktop environment by SSHing into the target machine and running the installation step by step, these commands all originate from the machine running Ronin Link. 
+**Cause:** Ronin Link creates a desktop environment by SSHing into the target machine and running the installation step by step, these commands all originate from the machine running Ronin Link. 
 
-If at any point in the install the connection is broken (i.e. Network connectivity is lost) then there is potential for the installer to break and soft lock future attemps.    
+If at any point in the install the connection is broken (i.e. Network connectivity is lost) then there is potential for the installer to break and soft lock future attempts.    
 
 .. rst-class:: clear-both
 

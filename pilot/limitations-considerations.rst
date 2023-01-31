@@ -15,7 +15,7 @@ Red Hat Machines
 .. image:: images/rhel_subscription.jpg
     :class: with-shadow float-right
 
-**Casue:** For the pilot phase we currently do not manage RHEL subscriptions.
+**Cause:** For the pilot phase we currently do not manage RHEL subscriptions.
 
 .. rst-class:: clear-both
 
@@ -28,7 +28,7 @@ GPU Backed Machines
 
 Ronin provides access to a handful of GPU backed :term:`AWS instances<instance>`,given there are so many options we've decided to keep to providing one pre-configured package.
 
-The **"Ubuntu 20.04 LTS - NVIDIA Drivers"** package comes with drivers and software pre-configured to work with Ronin's remote desktop solution Nice DCV, allowing you to skip the somewhat teadious configuration steps.
+The **"Ubuntu 20.04 LTS - NVIDIA Drivers"** package comes with drivers and software pre-configured to work with Ronin's remote desktop solution Nice DCV, allowing you to skip the somewhat tedious configuration steps.
 
 .. note::
     If you choose to use the standard Ubuntu package with a GPU backed machine and install the desktop environment via Ronin Link
@@ -41,9 +41,9 @@ Changing Instance Type After Creation
 
 In the event you make use of the **"Ubuntu 20.04 LTS - NVIDIA Drivers"** package at initial startup the machine will configure itself with the available GPU/s.
 
-It may be the case that your workload changes overtime making it nessisary to increase or decrease the instance size, adding or removing GPUs.
+It may be the case that your workload changes overtime making it necessary to increase or decrease the instance size, adding or removing GPUs.
 
-So that the DCV config can pick up on these changes you should run the commands below following an intance type change:
+So that the DCV config can pick up on these changes you should run the commands below following an instance type change:
 
 .. code-block:: bash
 

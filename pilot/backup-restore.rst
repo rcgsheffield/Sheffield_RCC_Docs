@@ -43,8 +43,8 @@ After all is said and done you should now have a freshly restored machine.
 
 .. admonition:: Windows Renaming
 
-    If your restored machine is running the Windows family of OSes you'll find that the computer name gets '-restored' suffixed to avoid naming conflcts as you may still have the source machine running in your project.
-    Depending on how the machine and its software has been configured, it may not be advisable to have source and restored maches running at the same time.
+    If your restored machine is running the Windows family of OSes you'll find that the computer name gets '-restored' suffixed to avoid naming conflicts as you may still have the source machine running in your project.
+    Depending on how the machine and its software has been configured, it may not be advisable to have source and restored machines running at the same time.
 
 .. _restoring_s3_objects:
 
@@ -52,7 +52,7 @@ Restoring S3 Objects
 ---------------------------------------
 
 .. warning:: 
-    Data in your S3 buckets is backed up using 'object versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage, we reccomend following this guide from Ronin on how to manage your buckets: `Working with Object Storage <https://blog.ronin.cloud/object-storage/>`__
+    Data in your S3 buckets is backed up using 'object versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage, we recommend following this guide from Ronin on how to manage your buckets: `Working with Object Storage <https://blog.ronin.cloud/object-storage/>`__
 
 Any changes to a file after its initial creation will form a new version, allowing you to browse through the old ones should you need to revert to an earlier point in time.
 

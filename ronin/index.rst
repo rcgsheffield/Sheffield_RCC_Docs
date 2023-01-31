@@ -5,7 +5,7 @@ Ronin Documentation
 
 Ronin is the frontend user interface that connects researchers up to the AWS backed infrastructure.
 
-The team over at Ronin have already built out a plethora of useful docs that may be relevent to you, so why not head on over to the `RONIN BLOG <https://blog.ronin.cloud/>`_
+The team over at Ronin have already built out a plethora of useful docs that may be relevant to you, so why not head on over to the `RONIN BLOG <https://blog.ronin.cloud/>`_
 
 Here are a few notable examples to get you up and running:
     * `Creating a machine in Ronin <https://blog.ronin.cloud/create-a-machine/>`_
@@ -14,7 +14,7 @@ Here are a few notable examples to get you up and running:
     * `Project storage summary <https://blog.ronin.cloud/storage-summary-help/>`_
 
 
-Once you've gotten through those we've got some further details on how and what is accessable to you within your new Ronin Machines:
+Once you've gotten through those we've got some further details on how and what is accessible to you within your new Ronin Machines:
 
 .. toctree::
   :hidden:

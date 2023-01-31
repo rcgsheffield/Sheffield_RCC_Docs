@@ -9,8 +9,8 @@ Resources you create inside of these projects have differing levels of network a
 Networking
 ---------------------------------------
 
-For the most part you will be working with what Ronin calls Machines and what we call :term:`Instances<Instance>`, these resouces are placed into their own project specific subnet.
-This is a way for Ronin to allow instances in a project to communitcate with one another in a isolated manner.
+For the most part you will be working with what Ronin calls Machines and what we call :term:`Instances<Instance>`, these resources are placed into their own project specific subnet.
+This is a way for Ronin to allow instances in a project to communicate with one another in a isolated manner.
 
 Instances in your project/s have unrestricted access other instances in the same project, have access to the campus network and from there outbound to the web.
 The graphic below goes into more detail:
@@ -22,7 +22,7 @@ The graphic below goes into more detail:
 
     Only outbound networking from the subnet is unrestricted. Inbound access to the Ronin Instances is limited to SSH over port 22 TCP
 
-We encourage you to make use of `Ronin Link's <https://blog.ronin.cloud/ronin-link/>`_ "Connect to an Application" feature to proxy aplications directly to your machine,
+We encourage you to make use of `Ronin Link's <https://blog.ronin.cloud/ronin-link/>`_ "Connect to an Application" feature to proxy applications directly to your machine,
 this makes it as if the service were running locally.
 
 
@@ -31,7 +31,7 @@ S3 / Object Storage
 ---------------------------------------
 
 Object Storage created in the RCC platform has restrictions on its access.
-The key restrction is that you will be required to log into the university VPN to access this storage regardless of if you are at or away from the campus network.
+The key restriction is that you will be required to log into the university VPN to access this storage regardless of if you are at or away from the campus network.
 
 .. note::
     More details on how to access storage to come
