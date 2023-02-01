@@ -8,6 +8,42 @@ As such you are able to make use of these features in the event of data loss/cor
 
 Backup and restoration is split out into 'Machine' and 'S3 Object Storage' as the data stored is handled differently for each. Machines are backed up and restored in full at a single point in time whereas object storage is much more granular, allowing you to restore to specific versions and at an individual object level.
 
+.. _backup-retention:
+
+Backup Retention
+---------------------------------------
+
+You may have seen reference to retention in differing parts of this documentation.
+Retention in a backup context is the amount of time we keep backups for and how frequently we create backups (their granularity).
+
+In a perfect world this would be indefinite, however the more backups we keep the more data is kept and therefore cost increases.
+
+Machine backups
+^^^^^^^^^^^^^^^
+
+We currently keep backups with the following retention:
+    - 14 daily backups
+    - 8 Weekly backups
+
+This means you can go 2 months back in time with weekly increments, or 2 weeks with daily increments.
+
+Bucket backups
+^^^^^^^^^^^^^^
+
+Full bucket backups follow the same retention policies as machine backups, however versioning only presents you with the last 14 days of changes.
+
+If you have a file you'd wish to restore that's not showing up in versioning please get in touch via the IT Services Helpdesk.
+
+
+.. _backup-schedule:
+
+Backup Schedule
+---------------------------------------
+
+Backup jobs are scheduled to start at 00:00 GMT, however they have an 8 hour starting window, meaning that the time of the backup could be anywhere between 00:00 GMT and 08:00 GMT.
+
+When restoring a machine you will always know the time of the backup as it is labelled on the package down to the minute.
+
 .. _restoring_machines:
 
 Restoring Machines
@@ -65,39 +101,3 @@ Versioning enables something of a self-service restore, more of a quasi-backup a
 For that reason we also keep backups of your data in a vault not accessible to end-users.
 
 In the event you are not able to restore your files to an earlier point in time using versioning, please get in touch via the IT Services Helpdesk.
-
-.. _backup-retention:
-
-Backup Retention
----------------------------------------
-
-You may have seen reference to retention in differing parts of this documentation.
-Retention in a backup context is the amount of time we keep backups for and how frequently we create backups (their granularity).
-
-In a perfect world this would be indefinite, however the more backups we keep the more data is kept and therefore cost increases.
-
-Machine backups
-^^^^^^^^^^^^^^^
-
-We currently keep backups with the following retention:
-    - 14 daily backups
-    - 8 Weekly backups
-
-This means you can go 2 months back in time with weekly increments, or 2 weeks with daily increments.
-
-Bucket backups
-^^^^^^^^^^^^^^
-
-Full bucket backups follow the same retention policies as machine backups, however versioning only presents you with the last 14 days of changes.
-
-If you have a file you'd wish to restore that's not showing up in versioning please get in touch via the IT Services Helpdesk.
-
-
-.. _backup-schedule:
-
-Backup Schedule
----------------------------------------
-
-Backup jobs are scheduled to start at 00:00 GMT, however they have an 8 hour starting window, meaning that the time of the backup could be anywhere between 00:00 GMT and 08:00 GMT.
-
-When restoring a machine you will always know the time of the backup as it is labelled on the package down to the minute.
