@@ -8,6 +8,15 @@ As such you are able to make use of these features in the event of data loss/cor
 
 Backup and restoration is split out into 'Machine' and 'Object Storage' as the data stored is handled differently for each. Machines are backed up and restored in full at a single point in time whereas object storage is much more granular, allowing you to restore to specific versions and at an individual object level.
 
+.. _backup-schedule:
+
+Backup Schedule
+---------------------------------------
+
+Backup jobs are scheduled to start at 00:00 GMT, however they have an 8 hour starting window, meaning that the time of the backup could be anywhere between 00:00 GMT and 08:00 GMT.
+
+When restoring a machine you will always know the time of the backup as it is labelled on the package down to the minute.
+
 .. _backup-retention:
 
 Backup Retention
@@ -33,15 +42,6 @@ Object Storage / Bucket backups
 
 .. warning:: 
     Data in your object storage is backed up using 'versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage, we recommend following this guide from Ronin on how to manage your buckets: `Working with Object Storage <https://blog.ronin.cloud/object-storage/>`__
-
-.. _backup-schedule:
-
-Backup Schedule
----------------------------------------
-
-Backup jobs are scheduled to start at 00:00 GMT, however they have an 8 hour starting window, meaning that the time of the backup could be anywhere between 00:00 GMT and 08:00 GMT.
-
-When restoring a machine you will always know the time of the backup as it is labelled on the package down to the minute.
 
 .. _restoring_machines:
 
