@@ -6,14 +6,13 @@ Backup and Restore
 As :term:`RCC` is built upon AWS we're making use of the automated backup systems they provide.
 As such you are able to make use of these features in the event of data loss/corruption to restore from an alternate point in time.
 
-Backup and restoration is split out into 'Machine' and 'S3 Object Storage' as the data stored is handled differently for each. Machines are backed up and restored in full at a single point in time whereas object storage is much more granular, allowing you to restore to specific versions and at an individual object level.
+Backup and restoration is split out into 'Machine' and 'Object Storage' as the data stored is handled differently for each. Machines are backed up and restored in full at a single point in time whereas object storage is much more granular, allowing you to restore to specific versions and at an individual object level.
 
 .. _backup-retention:
 
 Backup Retention
 ---------------------------------------
 
-You may have seen reference to retention in differing parts of this documentation.
 Retention in a backup context is the amount of time we keep backups for and how frequently we create backups (their granularity).
 
 In a perfect world this would be indefinite, however the more backups we keep the more data is kept and therefore cost increases.
@@ -21,19 +20,19 @@ In a perfect world this would be indefinite, however the more backups we keep th
 Machine backups
 ^^^^^^^^^^^^^^^
 
-We currently keep backups with the following retention:
+We currently keep machine backups with the following retention:
     - 14 daily backups
     - 8 Weekly backups
 
 This means you can go 2 months back in time with weekly increments, or 2 weeks with daily increments.
 
-Bucket backups
-^^^^^^^^^^^^^^
+Object Storage / Bucket backups
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Full bucket backups follow the same retention policies as machine backups, however versioning only presents you with the last 14 days of changes.
+:term:`Bucket` backups follow the same retention policies as machine backups.
 
-If you have a file you'd wish to restore that's not showing up in versioning please get in touch via the IT Services Helpdesk.
-
+.. warning:: 
+    Data in your object storage is backed up using 'versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage, we recommend following this guide from Ronin on how to manage your buckets: `Working with Object Storage <https://blog.ronin.cloud/object-storage/>`__
 
 .. _backup-schedule:
 
@@ -84,13 +83,10 @@ After all is said and done you should now have a freshly restored machine.
 
 .. _restoring_s3_objects:
 
-Restoring S3 Objects
+Restoring From Object Storage
 ---------------------------------------
 
-.. warning:: 
-    Data in your S3 buckets is backed up using 'object versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage, we recommend following this guide from Ronin on how to manage your buckets: `Working with Object Storage <https://blog.ronin.cloud/object-storage/>`__
-
-Any changes to a file after its initial creation will form a new version, allowing you to browse through the old ones should you need to revert to an earlier point in time.
+With versioning enabled any changes to a file after its initial creation will form a new version, allowing you to browse through the old ones should you need to revert to an earlier point in time.
 
 .. hint:: 
     The best place to learn about versioning is via the AWS documentation on `versioning <https://docs.aws.amazon.com/AmazonS3/latest/userguide/versioning-workflows.html>`__ itself.
@@ -100,4 +96,4 @@ Any changes to a file after its initial creation will form a new version, allowi
 Versioning enables something of a self-service restore, more of a quasi-backup and not what we'd consider fool-proof.
 For that reason we also keep backups of your data in a vault not accessible to end-users.
 
-In the event you are not able to restore your files to an earlier point in time using versioning, please get in touch via the IT Services Helpdesk.
+In the event you are not able to restore your files to an earlier point in time using versioning, or are having issues with versioned files please get in touch via the IT Services Helpdesk.

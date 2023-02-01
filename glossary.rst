@@ -16,3 +16,6 @@ You should find information on most of them here.
 
     RCC
         Abbreviation of Research Cloud Computing, a term adopted by The University of Sheffield to reference the service as a whole.
+
+    Bucket
+        A bucket is the container for objects stored in AWS's S3 storage. This is often referred to as "Object Storage".
