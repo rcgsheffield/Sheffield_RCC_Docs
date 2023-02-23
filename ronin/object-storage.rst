@@ -9,16 +9,18 @@ To access Ronin object storage (other than from a Ronin instance) you will need 
 For those unfamiliar, object storage in Ronin is very much like shared storage, behaving like folder for you to store and retrieve files from multiple different computers.
 The most notable difference with object storage is that you don't generally have it mounted to your computer like an additional drive.
 
-.. note:: 
+.. hint:: 
 
     The term "object/s" here is synonymous with the term "file/s"
+
+    You may also see the term :term:`bucket` used frequently, this refers to the container in AWS's S3 Object Storage
 
 .. _creating-object-storage:
 
 Creating & Managing Object Storage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Creating a new :term:`bucket` is as simple as navigating to a project and then "Object Storage" page via the right hand menu:
+Creating a new bucket is as simple as navigating to a project and then "Object Storage" page via the right hand menu:
 
 .. image:: images/object-storage/main-page-button.png
     :align: center
@@ -147,7 +149,47 @@ this endpoint being something only accessible via the VPN.
 Windows / Mac - Cyberduck
 -------------------------
 
-This section is pending changes from Ronin RE: cyberduck profiles
+Cyberduck is a free to use application available on Windows and Mac, suggested for use by Ronin with some handy direct integration to make connecting to your object storage easier.
+If your wanting to use Cyberduck in the RCC platform simply install the relevant version on your machine from their site `<https://cyberduck.io/download/>`__ and follow the setup below:
+
+.. _install-cyberduck-profile:
+
+Install the Ronin Cyberduck Profile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you've just installed Cyberduck or are using a pre-installed version inside a Ronin Machine for the first time, you'll want to follow the steps below as there are some first time setup steps.
+
+1. Download our custom Cyberduck profile from `HERE <https://bucket.vpce-0c78482add3c489a0-oomti656.s3.eu-west-2.vpce.amazonaws.com/s3.rcc.shef.ac.uk/cyberduck/ronin.shef.ac.uk.cyberduckprofile>`__ (accessing will require you be connected to the VPN)
+2. Install the profile by double clicking on the downloaded ``ronin.shef.ac.uk.cyberduckprofile`` file, this will present a new blank bookmark in Cyberduck
+3. There are 2 options depending on what you want to do:
+    i. Close the screen and delete the newly created blank bookmark (easier if you want to use the bookmark files Ronin provides)
+    ii. Copy details from the 'connection info' panel in your object storage manually into the relevant fields, for this you will need to copy the ``ACCESS KEY ID`` and ``PATH`` details
+
+Importing Cyberduck Bookmarks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+    RCC Cyberduck bookmarks will not work correctly if you do not follow the steps in ":ref:`install-cyberduck-profile`"
+
+After a bucket is created head over to the "CONNECT INFO" panel of the relevant storage:
+
+.. image:: images/object-storage/connection-info.gif
+    :align: center
+    :scale: 75%
+
+At the bottom will be a button to download the Cyberduck bookmark for the object storage.
+With the ``.duck`` file in hand and Cyberduck open, import the file by dragging it into the application:
+
+.. image:: images/object-storage/import-bookmark.gif
+    :align: center
+    :scale: 75%
+
+With that open the bookmark by double clicking, from there it may ask you to enter your SecretAccessKey obtained when generating keys for the bucket.
+
+.. hint:: 
+    If you simply double click the ``.duck`` file it won't be imported, but opened ad-hoc. You need to follow the steps above if you want Cyberduck to remember the bookmark.
+
+
 
 Linux - AWS CLI
 ---------------
