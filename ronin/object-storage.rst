@@ -189,8 +189,6 @@ With that open the bookmark by double clicking, from there it may ask you to ent
 .. hint:: 
     If you simply double click the ``.duck`` file it won't be imported, but opened ad-hoc. You need to follow the steps above if you want Cyberduck to remember the bookmark.
 
-
-
 Linux - AWS CLI
 ---------------
 
