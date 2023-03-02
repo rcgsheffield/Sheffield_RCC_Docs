@@ -51,7 +51,7 @@ Restoring Machines
 Due to their technical implementation automated backups show up under 'Packages' in Ronin, but it is not where they are restored from.
 
 
-.. image:: images/project_packages.png
+.. image:: images/backup-restore/project_packages.png
     :align: center
     :scale: 50%
 
@@ -61,7 +61,7 @@ Here you may find that there is a mix of your own self created :term:`project pa
 
 It's usually best to use the search function at the top right to find the name of the machine you are looking to restore. This can even be a machine you may have deleted within the retention period.
 
-.. image:: images/packages_restore.png
+.. image:: images/backup-restore/packages_restore.png
     :align: center
     :scale: 35%
 

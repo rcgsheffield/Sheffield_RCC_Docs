@@ -13,7 +13,6 @@ This section of the documentation details the known issues, limitations and cons
 
   known-issues
   limitations-considerations
-  backup-restore
 
 * :ref:`known-issues`
 * :ref:`limitations-considerations`
