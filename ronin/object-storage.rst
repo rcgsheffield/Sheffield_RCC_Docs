@@ -150,26 +150,16 @@ Windows / Mac - Cyberduck
 -------------------------
 
 Cyberduck is a free to use application available on Windows and Mac, suggested for use by Ronin with some handy direct integration to make connecting to your object storage easier.
-If your wanting to use Cyberduck in the RCC platform simply install the relevant version on your machine from their site `<https://cyberduck.io/download/>`__ and follow the setup below:
+
+.. hint:: 
+    Cyberduck comes pre-installed on the Windows images provided in Ronin
+
+If your wanting to use Cyberduck on your own machine simply install the relevant version on your machine from their site `<https://cyberduck.io/download/>`__
 
 .. _install-cyberduck-profile:
 
-Install the Ronin Cyberduck Profile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you've just installed Cyberduck or are using a pre-installed version inside a Ronin Machine for the first time, you'll want to follow the steps below as there are some first time setup steps.
-
-1. Download our custom Cyberduck profile from `HERE <https://bucket.vpce-0c78482add3c489a0-oomti656.s3.eu-west-2.vpce.amazonaws.com/s3.rcc.shef.ac.uk/cyberduck/ronin.shef.ac.uk.cyberduckprofile>`__ (accessing will require you be connected to the VPN)
-2. Install the profile by double clicking on the downloaded ``ronin.shef.ac.uk.cyberduckprofile`` file, this will present a new blank bookmark in Cyberduck
-3. There are 2 options depending on what you want to do:
-    i. Close the screen and delete the newly created blank bookmark (easier if you want to use the bookmark files Ronin provides)
-    ii. Copy details from the 'connection info' panel in your object storage manually into the relevant fields, for this you will need to copy the ``ACCESS KEY ID`` and ``PATH`` details
-
-Importing Cyberduck Bookmarks
+Installing Cyberduck profiles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. note::
-    RCC Cyberduck bookmarks will not work correctly if you do not follow the steps in ":ref:`install-cyberduck-profile`"
 
 After a bucket is created head over to the "CONNECT INFO" panel of the relevant storage:
 
@@ -177,17 +167,24 @@ After a bucket is created head over to the "CONNECT INFO" panel of the relevant 
     :align: center
     :scale: 75%
 
-At the bottom will be a button to download the Cyberduck bookmark for the object storage.
-With the ``.duck`` file in hand and Cyberduck open, import the file by dragging it into the application:
+At the bottom will be a button to download the Cyberduck profile for the selected bucket.
+With the ``.cyberduckprofile`` file in hand import the file by double clicking it, this will open Cyberduck and present a new connection window:
 
-.. image:: images/object-storage/import-bookmark.gif
+.. image:: images/object-storage/cd-profile.png
     :align: center
     :scale: 75%
 
-With that open the bookmark by double clicking, from there it may ask you to enter your SecretAccessKey obtained when generating keys for the bucket.
+From this screen you can enter the AccessKeyId and SecretAccessKey into the relevant fields, **please note** doing so will save the credentials to your computer.
 
-.. hint:: 
-    If you simply double click the ``.duck`` file it won't be imported, but opened ad-hoc. You need to follow the steps above if you want Cyberduck to remember the bookmark.
+Alternatively you can close off the screen to show the new bookmark, if you've not entered the credentials you will be asked for them upon opening the bookmark:
+
+.. image:: images/object-storage/cd-auth.png
+    :align: center
+    :scale: 50%
+
+Here you have the option **not** to save the credentials by un-ticking "Add to Keychain" on Mac or "Save password" on Windows.
+
+Given the credentials are valid you should now be able to access your bucket!
 
 Linux - AWS CLI
 ---------------
