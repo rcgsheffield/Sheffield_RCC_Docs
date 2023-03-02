@@ -53,8 +53,8 @@ Creating & Managing Keys
 
 Access keys are the primary method of authenticating with your object storage, they can be thought of like a username and password where:
 
-- AccessKeyId == Username
-- SecretAccessKey == Password
+- AccessKeyId = Username
+- SecretAccessKey = Password
 
 Unlike a username / password pair however we do not get to manage them, instead they are generated for us.
 To do this click on the "MANAGE PERMISSIONS" button along the bottom of the bucket you wish to manage.
@@ -109,7 +109,7 @@ Without versioning enabled the bucket does not get processed as part of the auto
     To understand more about how versioning works the AWS documentation on `versioning <https://docs.aws.amazon.com/AmazonS3/latest/userguide/versioning-workflows.html>`__ is the best place to look.
 
 Enabling versioning in Ronin couldn't be simpler **but reader beware!** once versioning is enabled it cannot then be fully disabled,
-only "suspended" details of which are explained in the AWS documentation `Working with objects in a versioning-suspended bucket <https://docs.aws.amazon.com/AmazonS3/latest/userguide/VersionSuspendedBehavior.html>`__
+only "suspended". Details of which are explained in the AWS documentation `Working with objects in a versioning-suspended bucket <https://docs.aws.amazon.com/AmazonS3/latest/userguide/VersionSuspendedBehavior.html>`__
 
 .. image:: images/object-storage/versioning.png
     :align: center
@@ -130,7 +130,7 @@ moving objects of a pre-defined age to S3 Glacier.
 This is under the assumption that the data over the defined age will be accessed less frequently (sometimes considerably) than newer data.
 
 As with anything there are caveats to this, the deeper the tier of archival you choose the lower storage costs you pay.
-Consequently you will need to pay more to retrieve archived data and in some cases even wait extended periods of time to even access it.
+To balance out these lower storage costs you will need to pay more to retrieve archived data and in some cases even wait extended periods of time to access it.
 
 As usual the best place to learn the fine details is in AWS's documentation. The `S3 Glacier storage classes <https://aws.amazon.com/s3/storage-classes/glacier/>`__
 page has a breakdown of the differing archival tiers available for use in Ronin.
