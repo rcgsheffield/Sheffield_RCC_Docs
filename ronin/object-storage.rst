@@ -42,7 +42,9 @@ In the event that this is the case you will be presented with an error message p
 .. image:: images/object-storage/storage-card.png
     :align: center
     :scale: 35%
- 
+
+|
+
 Once a suitable name has been used the new bucket should show up in the list ready for you to configure to further suit your needs.
 
 You may note that after a bucket's creation there are a handful of red lights and text, these are here to denote that features are turned off or yet to be configured.
@@ -62,6 +64,8 @@ To do this click on the "MANAGE PERMISSIONS" button along the bottom of the buck
 .. image:: images/object-storage/create-keys.png
     :align: center
     :scale: 35%
+
+|
 
 You will then be presented with the option to generate either "Read & Write" or "Read Only" keys.
 This refers to the level of permissions the given to the keys we generate.
@@ -87,6 +91,8 @@ You'll want to keep this safe and secure as they are the **only** copy of the ke
 .. image:: images/object-storage/new-keys.png
     :align: center
     :scale: 35%
+
+|
 
 If the SecretAccessKey part is lost new keys will have to be generated, this is simple enough as the option will present itself in the
 manage permissions window of your bucket. You will also note that you have the option to delete the keys and see the AccessKeyId to verify it is the correct key pair.
@@ -114,6 +120,8 @@ only "suspended". Details of which are explained in the AWS documentation `Worki
 .. image:: images/object-storage/versioning.png
     :align: center
     :scale: 35%
+
+|
 
 Once your confident versioning is something you need, simply click on red versioning icon of the bucket card.
 This will present you with a brief description and option to enable.
@@ -167,12 +175,16 @@ After a bucket is created head over to the "CONNECT INFO" panel of the relevant 
     :align: center
     :scale: 75%
 
+|
+
 At the bottom will be a button to download the Cyberduck profile for the selected bucket.
 With the ``.cyberduckprofile`` file in hand import the file by double clicking it, this will open Cyberduck and present a new connection window:
 
 .. image:: images/object-storage/cd-profile.png
     :align: center
     :scale: 75%
+
+|
 
 From this screen you can enter the AccessKeyId and SecretAccessKey into the relevant fields, **please note** doing so will save the credentials to your computer.
 
@@ -181,6 +193,8 @@ Alternatively you can close off the screen to show the new bookmark, if you've n
 .. image:: images/object-storage/cd-auth.png
     :align: center
     :scale: 50%
+
+|
 
 Here you have the option **not** to save the credentials by un-ticking "Add to Keychain" on Mac or "Save password" on Windows.
 
@@ -201,6 +215,8 @@ The region information can also be seen in the "CONNECT INFO" page of your bucke
 .. image:: images/object-storage/connection-info.gif
     :align: center
     :scale: 75%
+
+|
 
 To form our CLI commands we'll a couple more pieces of the puzzle these also happen to be available in the connection info page.
 
