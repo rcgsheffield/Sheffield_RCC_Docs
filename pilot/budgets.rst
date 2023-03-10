@@ -41,7 +41,29 @@ With a machine created, the costs for the instance will show up in the $ tab of 
 
 .. image:: images/budgets/small-machine.png
     :align: center
+    :scale: 50%
 
 |
 
 As noted above the instance in a running state will cost more per month than in the stopped state, but there will still be some charge with it in the stopped state.
+
+Object storage
+--------------
+
+Unlike block storage attached to machines where you set a disk size and are charged for that size, object storage charges you per GB of space used.
+
+Calculating S3 storage costs can be a bit daunting when viewed from the AWS documentation: `<https://aws.amazon.com/s3/pricing/>`__
+In any event object storage will always be the most cost effective method of storing data within RCC.
+
+Storage costs for your data in object storage is updated every 72 hours and shown in the project dashboard:
+
+.. image:: images/budgets/object-storage.png
+    :align: center
+    :scale: 50%
+
+|
+
+You'll note that this is broken down into standard and archived objects, but only gives an aggregated cost for all of your stored objects.
+
+.. note:: 
+    Archival storage costs less to store the data but may incur additional charges to retrieve the data. See :ref:`object-archiving` for more info.

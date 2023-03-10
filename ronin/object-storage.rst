@@ -128,6 +128,8 @@ This will present you with a brief description and option to enable.
 
 With versioning enabled, the bucket will be picked up by the next backup cycle. You may wish to see :ref:`backup-restore` for more info.
 
+.. _object-archiving:
+
 Archiving
 ---------
 
