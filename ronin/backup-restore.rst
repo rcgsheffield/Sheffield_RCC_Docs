@@ -48,22 +48,30 @@ Object Storage / Bucket backups
 Restoring Machines
 ---------------------------------------
 
-Due to their technical implementation automated backups show up under 'Packages' in Ronin, but it is not where they are restored from.
+Restoration of machines is a 2 step process. Step 1. is to log a helpdesk ticket requesting a Ronin machine restore, for this we will need to know:
 
+- The machine name as presented in Ronin
+- Potential restore date/s
 
-.. image:: images/project_packages.png
-    :align: center
-    :scale: 50%
+After this information has been sent over you will receive a response once access to the requested backup/s have been added.
 
 As automated backups show up as Ronin Packages a restore can be performed by `creating a new machine <https://blog.ronin.cloud/create-a-machine/>`_ and searching the "Project Packages" section under Step 1 of the machine creation screen.
 
-Here you may find that there is a mix of your own self created :term:`project packages<Package>` and the scheduled backups. If you have a lot of machines it can become a little difficult to see the wood for the trees.
+.. image:: images/backup-restore/project_packages.png
+    :align: center
+    :scale: 50%
 
-It's usually best to use the search function at the top right to find the name of the machine you are looking to restore. This can even be a machine you may have deleted within the retention period.
+|
 
-.. image:: images/packages_restore.png
+Here you may find that there is a mix of your own self created :term:`project packages<Package>` and the backups you've requested access too. If you have a lot of machines it can become a little difficult to see the wood for the trees.
+
+It's usually best to use the search function at the top right to find the name of the machine you are looking to restore.
+
+.. image:: images/backup-restore/packages_restore.png
     :align: center
     :scale: 35%
+
+|
 
 Once you have found your target machine in the list, select one that has a date of creation you're happy with (you may wish to go further back in time), close the packages window and continue as if you were going to create a new machine.
 

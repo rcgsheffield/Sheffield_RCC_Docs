@@ -14,13 +14,17 @@ Here are a few notable examples to get you up and running:
     * `Project storage summary <https://blog.ronin.cloud/storage-summary-help/>`_
 
 
-Once you've gotten through those we've got some further details on how and what is accessible to you within your new Ronin Machines:
+Once you've gotten through those we've got some further details on how and what is accessible to you within :term:`RCC` platform:
 
 .. toctree::
   :hidden:
   :maxdepth: 1
   :glob:
 
-  projects
+  networking
+  object-storage
+  backup-restore
 
-* :ref:`projects`
+* :ref:`networking`
+* :ref:`object-storage`
+* :ref:`backup-restore`

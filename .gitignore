@@ -8,3 +8,4 @@ get_docs.py
 .vscode/
 UNKNOWN.egg-info/
 .tox/
+.DS_Store
