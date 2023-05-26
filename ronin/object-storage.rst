@@ -15,10 +15,10 @@ The most notable difference with object storage is that you don't generally have
 
     You may also see the term :term:`bucket` used frequently, this refers to the container in AWS's S3 Object Storage
 
-.. _creating-object-storage:
+.. _managing-object-storage:
 
-Creating & Managing Object Storage
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creating, Managing & Deleting Object Storage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Creating a new bucket is as simple as navigating to a project and then "Object Storage" page via the right hand menu:
 
@@ -99,34 +99,43 @@ manage permissions window of your bucket. You will also note that you have the o
 
 With keys in hand you are now ready to connect to the bucket, see :ref:`accessing-object-storage` for details.
 
+.. _object-versioning:
+
 Versioning
 ----------
 
-As shown above, when a new bucket is created some features are disabled by default.
-Versioning being off by default has a primary effect and a secondary effect.
+Normally when a new bucket is created versioning is disabled by default. We however enforce versioning inside Ronin as it is a requirement for backups.
 
-The most obvious effect is that when you overwrite existing files the old "version" ceases to exist,
-with it turned on however it is replaced but not removed. You are then able look back into the past so to speak in the event a file is undesirably overwritten.
+When you create a new bucket in Ronin you may even see this temporarily in the GUI, given a short period of time you'll note the versioning label on a new bucket turn from Red to Green:
 
-The secondary effect here is that versioning is a requirement for S3 buckets to be automatically backed up.
-Without versioning enabled the bucket does not get processed as part of the automatic backup system due to a technical limitation on AWS's part.
+.. image:: images/object-storage/versioning-enabled.png
+    :align: center
+    :scale: 75%
+
+|
+
+You will also note that a default version lifecycle of 14 days is set. This can be altered should you wish to extend or reduce the version lifecycle.
+
+What this means for you, adding, removing and editing objects in the bucket in day to day use will mostly be transparent.
+
+The most important effect is that when you overwrite existing files in the bucket the old "version" of that file rather than being replaced is hidden as an invisible file, becoming an "old version" 
+You are then able look back into the past so to speak to see these versions. These versions are kept based on the lifecycle set for the bucket, by default any versions older than
+14 days are deleted.
 
 .. hint:: 
     To understand more about how versioning works the AWS documentation on `versioning <https://docs.aws.amazon.com/AmazonS3/latest/userguide/versioning-workflows.html>`__ is the best place to look.
 
-Enabling versioning in Ronin couldn't be simpler **but reader beware!** once versioning is enabled it cannot then be fully disabled,
-only "suspended". Details of which are explained in the AWS documentation `Working with objects in a versioning-suspended bucket <https://docs.aws.amazon.com/AmazonS3/latest/userguide/VersionSuspendedBehavior.html>`__
+Though a useful tool, versioning comes with some caveats that might catch you out once in a while. Here are a few you might want to be aware of:
 
-.. image:: images/object-storage/versioning.png
-    :align: center
-    :scale: 35%
+- Deleted files don't actually get deleted, but are given a `delete marker <https://docs.aws.amazon.com/AmazonS3/latest/userguide/DeleteMarker.html>`__ to hide them from view.
+- When a file large or small is changed, regardless of frequency a new version is created in its place, these are kept until they hit the lifecycle age.
+  Many versions of an object will appear as though you are being charged for having duplicates of the object. 
+  You may wish to lower the lifecycle rules if this is the case, or perhaps move your storage onto another more suitable location such as :term:`EBS`.
+- Before you can delete a bucket all files, versions and delete markers must be removed. With versioning this becomes a complex enough task to warrant it's own section.
 
-|
-
-Once your confident versioning is something you need, simply click on red versioning icon of the bucket card.
-This will present you with a brief description and option to enable.
-
-With versioning enabled, the bucket will be picked up by the next backup cycle. You may wish to see :ref:`backup-restore` for more info.
+.. note::
+    Versioning is enforced in RCC. Though the GUI shows the option to "SUSPEND VERSIONING", when attempted versioning will simply re-enable itself.
+    This is due to the requirement for versioning to be enabled for our backup system to work.
 
 .. _object-archiving:
 
@@ -146,6 +155,34 @@ As usual the best place to learn the fine details is in AWS's documentation. The
 page has a breakdown of the differing archival tiers available for use in Ronin.
 
 If you think that Glacier archival is right for you, but are still unclear on the potential implications please get in touch via the IT Services Helpdesk.
+
+.. _deleting-object-storage:
+
+Deleting a Bucket
+-----------------
+
+As explained in the :ref:`object-versioning` section, when files are deleted from a bucket in RCC they aren't really deleted. Simply given a delete marker which in turn will hide the object from view.
+
+This along with object versions (which are typically also hidden from view) complicates the deletion of a bucket, given that they must also be removed before the bucket can be deleted.
+
+There are a couple ways to go about this. The simplest and least involved method would be to change the version settings on the bucket to a lifecycle of 1 day,
+then simply wait 24 hours and the lifecycle rule will remove the old versions for you.
+
+Should you not have the time to wait for this however, you will need to manually delete versions and object markers from the bucket via the `AWS CLI <https://aws.amazon.com/cli/>`__.
+With the AWS CLI installed and configured using your bucket access keys, you'll want to use the below commands to first delete all object versions and then delete markers from the bucket::
+
+    aws s3api delete-objects --bucket <BUCKET NAME> \
+    --delete "$(aws s3api list-object-versions --bucket <BUCKET NAME> --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
+
+    aws s3api delete-objects --bucket <BUCKET NAME> \
+    --delete "$(aws s3api list-object-versions --bucket <BUCKET NAME> --query='{Objects: DeleteMarkers[].{Key:Key,VersionId:VersionId}}')"
+
+.. warning::
+    These commands will delete **ALL** versions and delete markers in the bucket!
+
+Source: `<https://www.learnaws.org/2022/07/04/delete-versioning-bucket-s3/>`__
+
+With that done you should now be able to delete the bucket from within the RCC GUI.
 
 .. _accessing-object-storage:
 
