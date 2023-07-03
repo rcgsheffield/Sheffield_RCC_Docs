@@ -40,8 +40,12 @@ Object Storage / Bucket backups
 
 :term:`Bucket` backups follow the same retention policies as machine backups.
 
-.. warning:: 
-    Data in your object storage is backed up using 'versioning'. This feature is **NOT** automatically enabled for you at creation of a new bucket. This can be done in Ronin shortly after you create new object storage, we recommend following this guide from Ronin on how to manage your buckets: `Working with Object Storage <https://blog.ronin.cloud/object-storage/>`__
+Data in your object storage is backed up using 'versioning'. This feature **is** automatically enabled for you at creation of a new bucket along with the creation of a lifecycle rule.
+Should you wish to know more we recommend you read our docs on object storage :ref:`object-storage`.
+
+.. note:: 
+    Although versioning is required for our backup policy to work (which is why it is enabled for you by default) object versions are not correlated with object backups.
+    Read on to :ref:`restoring_s3_objects` for more information on how this effects restoration of objects.
 
 .. _restoring_machines:
 
