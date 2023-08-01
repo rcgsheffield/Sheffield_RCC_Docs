@@ -11,7 +11,7 @@ livereload==2.6.3
 MarkupSafe==2.1.2
 packaging==23.1
 pathtools==0.1.2
-port-for==0.6.3
+port-for==0.7.1
 Pygments==2.15.1
 pyparsing==3.0.9
 pytz==2023.3
