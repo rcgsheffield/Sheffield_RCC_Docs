@@ -18,7 +18,7 @@ Install the AWS WorkSpaces Client
 
 Before proceeding, you'll need to ensure you have received conformation that your DSH account and workspace has been fully provisioned for use with your university account.
 
-1. Open the App Center, search for and ensure the "Update Computer Certificate Acl" application is available and installed:
+1. Open the Software Center, search for and ensure the "Update Computer Certificate Acl" application is available and installed:
 
 .. image:: images/ws-install-2.png
     :align: center
