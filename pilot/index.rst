@@ -14,7 +14,9 @@ This section of the documentation details the known issues, limitations and cons
   known-issues
   limitations-considerations
   budgets
+  upgrading-ubuntu
 
 * :ref:`known-issues`
 * :ref:`limitations-considerations`
 * :ref:`budgets`
+* :ref:`upgrading-ubuntu`
