@@ -40,7 +40,7 @@ Before proceeding, you'll need to ensure you have received conformation that you
 
 4. Follow through the rest of the prompts until the installer has finished
 
-Connect to your WorkSpace
+Connect To Your WorkSpace
 ---------------------------------------
 
 .. note:: 
