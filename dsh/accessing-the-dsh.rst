@@ -13,7 +13,7 @@ This comes in the form of a virtual desktop hosted in AWS WorkSpaces, for which 
 
 .. _install-aws-workspaces-client:
 
-Install the AWS WorkSpaces Client
+Install The AWS WorkSpaces Client
 ---------------------------------------
 
 Before proceeding, you'll need to ensure you have received conformation that your DSH account and workspace has been fully provisioned for use with your university account.
@@ -43,3 +43,53 @@ Before proceeding, you'll need to ensure you have received conformation that you
     :scale: 75%
 
 You should now be ready to enter your login credentials.
+
+Understanding Your Access
+---------------------------------------
+
+Now that you have a way into the DSH, you should familiarize yourself with the different things you can and cannot access via your workspace.
+
+.. image:: images/project-architecture.jpg
+    :align: center
+
+|
+
+The diagram above shows a simplified layout of your access in the DSH.
+From your workspace you will be able to access:
+
+* Ronin
+* Machines/Instances in your project/s
+* Internal Gitlab
+* Internal update mirrors
+* Authentication services
+
+Machines/Instances in your projects/s will have additional access to things like:
+
+* Object Storage
+* Internal CRAN / Pypi mirrors
+* Unrestricted access to each other (machines in your projects have no firewalls between each other)
+
+Ronin
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Your workspace will come pre-configured with Firefox as the default browser.
+It is configured to automatically take you to the Ronin web UI as the default home page.
+
+
+Machines/Instances
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Access to your instances will be done through the Ronin Link desktop application.
+Allowing you to connect to both Windows and Ubuntu machines with either SSH or remote desktop.
+
+
+Object storage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Access to object storage you create in your project is limited to the instances you assign permissions to.
+You won't be able to access a bucket from your instance even with valid credentials until it is given additional permissions to do so.
+
+External Services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Certain projects may be granted special access outside of the DSH's firewall, this is primarily restricted to things like licensing servers.
