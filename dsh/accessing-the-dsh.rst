@@ -6,11 +6,6 @@ Accessing The DSH
 Unlike in the :term:`RCC` platform, the :term:`DSH` requires you to access the system via a `Bastion Host <https://en.wikipedia.org/wiki/Bastion_host>`_ created specifically for your project.
 This comes in the form of a virtual desktop hosted in AWS WorkSpaces, for which you'll need software to access.
 
-.. note:: 
-    You will only be able to access your workspace via a University of Sheffield managed desktop while onsite (connected to the campus network).
-    
-    Attempting to connect while offsite, even while connected to the VPN will result in an authentication failure.
-
 .. _install-aws-workspaces-client:
 
 Install The AWS WorkSpaces Client
@@ -36,18 +31,76 @@ Before proceeding, you'll need to ensure you have received conformation that you
 
 |
 
-4. When the installer completes open WorkSpaces and enter your workspace registration code
+5. If prompted with a prompt to install a new certificate for the Starfield Services Root Certificate Authority (CA) select ``Yes``
 
 .. image:: images/ws-install-3.png
     :align: center
+
+|
+
+4. Follow through the rest of the prompts until the installer has finished
+
+Connect to your WorkSpace
+---------------------------------------
+
+.. note:: 
+    You will only be able to access your workspace via a University of Sheffield managed desktop while onsite (connected to the campus network).
+    
+    Attempting to connect while offsite, even while connected to the VPN will result in an authentication failure.
+
+During the account setup process you should have received an email containing the registration code for your WorkSpace.
+Once you open the WorkSpaces app on your machine enter the registration code as prompted:
+
+.. image:: images/ws-connect-1.png
+    :align: center
     :scale: 75%
 
-You should now be ready to enter your login credentials.
+You should then be prompted with to enter your DSH credentials:
+
+.. image:: images/ws-connect-2.png
+    :align: center
+    :scale: 75%
+
+Here you will enter your ``dsh_`` username and password. In the MFA field you will need to obtain a one time code from your Duo app:
+
+.. image:: images/ws-connect-3.png
+    :align: center
+    :scale: 25%
+
+Once you have entered the MFA code make sure to press the ``Refresh Passcode`` button as these are one time use only.
+
+When you sign into your WorkSpace for the first time you may be prompted with a firewall security alert:
+
+.. image:: images/ws-connect-4.png
+    :align: center
+    :scale: 75%
+
+You can safely cancel off this page.
+
+The WorkSpace should now start up and connect after a few minutes.
+If you encounter any issues during this process please take a look at the troubleshooting steps below.
+
+Troubleshooting
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The most common error while entering your registration code is the "Unable to authenticate" screen:
+
+.. image:: images/ws-troubleshoot-1.png
+    :align: center
+    :scale: 75%
+
+This may appear when the device you are connecting with is not authorized to register with your WorkSpace.
+Potential causes:
+
+* Attempting to connect with an un-managed device (When connecting you will need to do so from a university provided managed YoYo desktop)
+* Computer certificate inaccessible (Ensure step 3. of the `install-aws-workspaces-client`_ section has been followed)
+
+If neither of these apply and the issue persists, or if there are any other issues please log a helpdesk ticket.
 
 Understanding Your Access
 ---------------------------------------
 
-Now that you have a way into the DSH, you should familiarize yourself with the different things you can and cannot access via your workspace.
+Now that you have a way into the DSH, you should familiarize yourself with the different things you can and cannot access via your WorkSpace.
 
 .. image:: images/project-architecture.jpg
     :align: center
