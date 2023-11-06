@@ -6,7 +6,7 @@ Upgrading Ubuntu to 22.04
 When the :term:`RCC` pilot began it was restricted to the deployment of Ubuntu 20.04 due to technical limitations.
 Although these are no longer present and the default Ubuntu image is now 22.04, some projects will still have active 20.04 instances.
 
-Ubuntu 22.04 will go end of support on `April 2025 <https://wiki.ubuntu.com/Releases>`_, we're therefore suggesting that people running instances upgrade at their earliest convenience.
+Ubuntu 20.04 will go end of support on `April 2025 <https://wiki.ubuntu.com/Releases>`_, we're therefore suggesting that people running instances upgrade at their earliest convenience.
 
 Taking a Backup
 ---------------------------------------
