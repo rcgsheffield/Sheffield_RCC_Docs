@@ -22,11 +22,13 @@ Once you've gotten through those we've got some further details on how and what 
   :glob:
 
   networking
+  drive-storage
   object-storage
   backup-restore
   updates
 
 * :ref:`networking`
+* :ref:`drive-storage`
 * :ref:`object-storage`
 * :ref:`backup-restore`
 * :ref:`updates`
