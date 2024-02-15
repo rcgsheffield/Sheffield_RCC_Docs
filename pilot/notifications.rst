@@ -7,14 +7,14 @@ As a creator / owner of resources inside Ronin you may receive Email based notif
 These intend to alert you of possible under utilization of resources to help avoid unnecessary project spend.
 
 .. note::
-    All notifications will come from the address `noreply@ronin.cloud`
+    All notifications will come from the address **noreply@ronin.cloud**, always be cautious when following links from external addresses!
 
 .. _instance_utilization:
 
 Instance Utilization
 ---------------------------------------
 
-If you have received an email titled "Ronin Under Utilization Alert!" this means that Ronin has noticed an :term:`<instance>` in your project has gone for more than more than 24 hours with under 10% CPU utilization.
+If you have received an email titled "Ronin Under Utilization Alert!" this means that Ronin has noticed an :term:`instance` in your project has gone for more than more than 24 hours with under 10% CPU utilization.
 This is designed to ensure you've not accidentally left a machine running idle. Unlike on-premise VM's that run 24/7 we recommend you shut down your instances when not in use, much like you would your own PC. 
 
 We do also understand this alert could be a false positive where your workloads are not CPU demanding but still require the machine be on for extended periods.
