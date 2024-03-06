@@ -6,7 +6,7 @@ Drive Storage
 Drive storage, or 'block storage' as it's sometimes more generally referred to as, is the storage attached directly to your :term:`instances<instance>` within Ronin.  
 The other main type of stored available in Ronin is :ref:`object-storage`.  Drive/block storage offers better performance for both reading/writing data and also for file metadata queries, but object storage is cheaper and offers larger capacities.   
 
-These are most commonly the "Root Drive" however Ronin gives you the option to create your own additional storage to attach and move between instances.
+These are most commonly the 'Root Drive' however Ronin gives you the option to create your own additional drive/block storage devices that can be attached to instances and moved _between_ instances.
 
 Should you want to know about the nitty gritty, the underlying technology used here is `AWS EBS <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html>`_.
 
