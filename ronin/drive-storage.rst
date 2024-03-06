@@ -18,7 +18,10 @@ Drive Types
 When creating a new non-root drive, Ronin gives you multiple options for drive types.
 As a general rule of thumb we recommend you select **SSD**, this is due to how AWS provisions drive speed.
 
-The SSD drives will be allocated 125MiB/s and 3000iops as per `gp3 defaults <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/general-purpose.html#gp3-performance>`_.
+The SSD drives will be allocated 
+* 125 MiB/s of read and write performance and 
+* 3000 of IOPS ('input/output operations per second')
+(as per `gp3 defaults <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/general-purpose.html#gp3-performance>`_).
 Should your workload require more performance please do get in touch.
 
 For those wondering why we omit the other drive options, this is mainly due to the behavior of the magnetic storage classes.
