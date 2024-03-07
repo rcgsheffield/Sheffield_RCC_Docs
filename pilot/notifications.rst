@@ -15,7 +15,9 @@ Instance Utilization
 ---------------------------------------
 
 If you have received an email titled "Ronin Under Utilization Alert!" this means that Ronin has noticed an :term:`instance` in your project has gone for more than more than 24 hours with under 10% CPU utilization.
-This is designed to ensure you've not accidentally left a machine running idle. Unlike on-premise VM's that run 24/7 we recommend you shut down your instances when not in use, much like you would your own PC. 
+This is designed to ensure you've not accidentally left a machine running idle. Unlike on-premise VMs that run 24/7 we recommend you shut down your instances when not in use, much like you would your own PC. 
+
+Only instances that are running are subject to the hourly usage rates however you will still be charged for the provision of storage as is explained below.
 
 We do also understand this alert could be a false positive where your workloads are not CPU demanding but still require the machine be on for extended periods.
 If this is the case please get in touch and we can make the instance exempt from these alerts.
