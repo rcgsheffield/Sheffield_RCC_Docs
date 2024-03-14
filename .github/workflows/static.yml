@@ -48,7 +48,7 @@ jobs:
         run: tox -e py310
       # Now upload to Github Pages
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
