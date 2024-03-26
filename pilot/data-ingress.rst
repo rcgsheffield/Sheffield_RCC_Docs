@@ -90,6 +90,8 @@ Use this when configuring the server address and port with the software suggeste
         From the left hand side of this new menu go to the ``SSH - Authentication`` tab and under the text box for ``Private key file:`` click on the ``...`` button to open a file selection prompt.
         This will allow you to select the private key ``.ppk`` file you generated in the steps above.
 
+        With those filled you should now be able to log into the SFTP service.
+
     .. group-tab:: Mac/Linux
 
         We don't yet have specific guidance on connecting to the SFTP service via Mac or Linux machines,
