@@ -11,8 +11,11 @@ If you are an internal user looking to upload data to the platform you may wish 
 SFTP
 ----
 
-An SFTP service is made available to approved data providers, if you've not been explicitly pointed towards using this service then you most likely don't have access.
-Access is provided on a project by project basis depending on data sharing agreements.
+.. note::
+    The SFTP service is made available to approved data providers upon request, if you've not been explicitly pointed towards using this service then you most likely don't have access.
+    Access is provided on a project by project basis depending on data sharing agreements.
+
+    If this service looks like a good fit for your needs please get in touch with us via the IT Services Helpdesk or if you are an external data provider please reach out to your UoS contacts.
 
 Generating Keys
 ^^^^^^^^^^^^^^^
