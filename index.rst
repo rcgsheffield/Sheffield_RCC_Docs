@@ -24,4 +24,5 @@ Take a look at the `Research and Innovation <https://students.sheffield.ac.uk/it
 
   ronin/index
   pilot/index
+  dsh/index
   glossary
