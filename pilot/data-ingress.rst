@@ -74,7 +74,41 @@ Use this when configuring the server address and port with the software suggeste
         Although we're tool agnostic this document providing step by step guidance for `WinSCP <https://winscp.net/eng/index.php>`_.
         Should you feel confident with configuration other good tools such as `FileZilla <https://filezilla-project.org/>`_ will work just fine.
 
-        Upon opening WinSCP the ``Login`` form should be presented, you'll want to make sure that the file protocol ``SFTP`` is selected:
+        You'll first need to change some settings in WinSCP:
+
+        Open the preferences dialogue box from the Options menu in the top right.
+
+        .. image:: images/sftp/winscp-options.png
+            :align: center
+            :scale: 75%
+        
+        |
+        
+        From here navigate to the "Transfer" tab, select "Default" and "Edit...":
+
+        .. image:: images/sftp/winscp-preferences.png
+            :align: center
+            :scale: 75%
+        
+        |
+        
+        This will open the "Transfer settings" box, from here ensure the "Preserve timestamp" box is **unchecked**:
+
+        .. image:: images/sftp/winscp-transfer-settings.png
+            :align: center
+            :scale: 75%
+        
+        |
+        
+        After confirming the transfer settings, enter the "Endurance" tab below and set the "Enable transfer resume/transfer to temporary filename for" setting to "Disable":
+
+        .. image:: images/sftp/winscp-endurance-settings.png
+            :align: center
+            :scale: 75%
+        
+        |
+
+        With these now set you may need re-open WinSCP to see the ``Login`` form, once open you'll want to make sure that the file protocol ``SFTP`` is selected:
 
         .. image:: images/sftp/winscp-login.png
             :align: center
