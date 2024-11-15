@@ -15,10 +15,12 @@ This section of the documentation details the known issues, limitations and cons
   limitations-considerations
   budgets
   upgrading-ubuntu
+  notifications
   data-ingress
 
 * :ref:`known-issues`
 * :ref:`limitations-considerations`
 * :ref:`budgets`
 * :ref:`upgrading-ubuntu`
+* :ref:`notifications`
 * :ref:`data-ingress`

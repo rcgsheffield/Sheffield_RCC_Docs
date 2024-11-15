@@ -12,6 +12,7 @@ Here are a few notable examples to get you up and running:
     * `Selecting a machine type <https://blog.ronin.cloud/selecting-machine/>`_
     * `Connecting to machines in Ronin <https://blog.ronin.cloud/ronin-link/>`_
     * `Working with object storage <https://blog.ronin.cloud/object-storage/>`_
+    * `Managing storage drives <https://blog.ronin.cloud/storage-help/>`_
     * `Project storage summary <https://blog.ronin.cloud/storage-summary-help/>`_
 
 
@@ -23,11 +24,13 @@ Once you've gotten through those we've got some further details on how and what 
   :glob:
 
   networking
+  drive-storage
   object-storage
   backup-restore
   updates
 
 * :ref:`networking`
+* :ref:`drive-storage`
 * :ref:`object-storage`
 * :ref:`backup-restore`
 * :ref:`updates`
