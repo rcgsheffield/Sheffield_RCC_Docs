@@ -103,16 +103,16 @@ Use this when configuring the server address and port with the software suggeste
         With these now set you may need re-open WinSCP to see the ``Login`` form, once open you'll want to make sure that the file protocol ``SFTP`` is selected:
 
         .. image:: images/sftp/winscp-login.png
-            :align: center
-            :scale: 50%
+            :align:: center
+            :scale:: 50%
         
         |
 
         With the server address entered in the host name and user name fields entered in you'll want to click on the ``Advanced...`` button to select your private key.
 
         .. image:: images/sftp/winscp-advanced.png
-            :align: center
-            :scale: 50%
+            :align:: center
+            :scale:: 50%
         
         |
 
