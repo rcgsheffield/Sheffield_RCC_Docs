@@ -79,40 +79,40 @@ Use this when configuring the server address and port with the software suggeste
         Open the preferences dialogue box from the Options menu in the top right.
 
         .. image:: images/winscp-options.png
-            :align:: center
-            :scale:: 50%
+            :align: center
+            :scale: 50%
         
         From here navigate to the "Transfer" tab, select "Default" and "Edit...":
 
         .. image:: images/winscp-preferences.png
-            :align:: center
-            :scale:: 50%
+            :align: center
+            :scale: 50%
         
         This will open the "Transfer settings" box, from here ensure the "Preserve timestamp" box is **unchecked**:
 
        .. image:: images/winscp-transfer-settings.png
-            :align:: center
-            :scale:: 50%
+            :align: center
+            :scale: 50%
         
         After confirming the transfer settings, enter the "Endurance" tab below and set the "Enable transfer resume/transfer to temporary filename for" setting to "Disable":
 
        .. image:: images/winscp-endurance-settings.png
-            :align:: center
-            :scale:: 50%
+            :align: center
+            :scale: 50%
 
         With these now set you may need re-open WinSCP to see the ``Login`` form, once open you'll want to make sure that the file protocol ``SFTP`` is selected:
 
         .. image:: images/sftp/winscp-login.png
-            :align:: center
-            :scale:: 50%
+            :align: center
+            :scale: 50%
         
         |
 
         With the server address entered in the host name and user name fields entered in you'll want to click on the ``Advanced...`` button to select your private key.
 
         .. image:: images/sftp/winscp-advanced.png
-            :align:: center
-            :scale:: 50%
+            :align: center
+            :scale: 50%
         
         |
 
