@@ -9,6 +9,7 @@ The team over at Ronin have already built out a plethora of useful docs that may
 
 Here are a few notable examples to get you up and running:
     * `Creating a machine in Ronin <https://blog.ronin.cloud/create-a-machine/>`_
+    * `Selecting a machine type <https://blog.ronin.cloud/selecting-machine/>`_
     * `Connecting to machines in Ronin <https://blog.ronin.cloud/ronin-link/>`_
     * `Working with object storage <https://blog.ronin.cloud/object-storage/>`_
     * `Managing storage drives <https://blog.ronin.cloud/storage-help/>`_

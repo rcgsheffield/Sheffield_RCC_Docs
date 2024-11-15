@@ -24,6 +24,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx_substitution_extensions',
+    'sphinx_tabs.tabs',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -39,7 +40,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Sheffield Research Cloud Computing Documentation'
-copyright = '2023, The University of Sheffield'
+copyright = '2024, The University of Sheffield'
 author = 'The University of Sheffield'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -141,3 +142,6 @@ man_pages = [
 
 # Add the global rst to make substitutions available
 rst_prolog = open('global.rst', 'r').read()
+
+sphinx_tabs_valid_builders = ['linkcheck']
+sphinx_tabs_disable_tab_closing = True
